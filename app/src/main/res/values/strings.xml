@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InventoryDesign</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+    <string-array name="product">
+        <item>C/A</item>
+        <item>A/C</item>
+        <item>C/B</item>
+        <item>B/A</item>
+        <item>E/A</item>
+    </string-array>
+</resources>
