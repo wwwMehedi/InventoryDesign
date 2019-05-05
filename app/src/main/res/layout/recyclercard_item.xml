@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardCornerRadius="4dp"
+    android:background="#D1B0B0"
+    android:layout_margin="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cpname"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="cpname"
+            android:textSize="17sp"
+            android:textColor="#865454"/>
+        <TextView
+            android:id="@+id/acid"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="(A/C)"
+            android:textSize="17sp"
+            android:textColor="#C02C2C"/>
+        <TextView
+            android:id="@+id/cpgsmid"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="cpgsm"
+            android:textSize="17sp"
+            android:textColor="#865454"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

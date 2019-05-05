@@ -35,12 +35,10 @@ private BottomNavigationView bottomNavigationView;
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-
-
         bottomNavigationView=(BottomNavigationView) findViewById(R.id.botombarid);
-//        if(savedInstanceState==null){
-//            getSupportFragmentManager().beginTransaction().replace(R.id.forfragmnt,new ViewpagerFragment()).commit();
-//        }
+        if(savedInstanceState==null){
+            getSupportFragmentManager().beginTransaction().replace(R.id.framid,new ViewpagerFragment()).commit();
+        }
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -49,17 +47,18 @@ private BottomNavigationView bottomNavigationView;
                     fragment=new ViewpagerFragment();
                 }
                 if(menuItem.getItemId()==R.id.moreid){
-                    fragment=new More();
-//                    Intent intent=new Intent(MainActivity.this,Home.class);
-//                    startActivity(intent);
+                  //  fragment=new More();
+                    Intent intent=new Intent(MainActivity.this,Home.class);
+                    startActivity(intent);
                 }
                 if(menuItem.getItemId()==R.id.personid){
                     fragment=new Supplyfragment();
                 }
                 if(menuItem.getItemId()==R.id.productid){
-                    fragment=new Productfragment();
+                    Intent intent=new Intent(MainActivity.this,ProductListCardView.class);
+                    startActivity(intent);
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framid,fragment).commit();
+//              getSupportFragmentManager().beginTransaction().replace(R.id.framid,fragment).commit();
                 return false;
             }
         });

@@ -62,8 +62,7 @@ private List<Listmodel> mylist;
         mylist.add(new Listmodel("Cliniva It","20050"));
         mylist.add(new Listmodel("Systec Press","30500"));
         mylist.add(new Listmodel("Liverpool press","50060"));
-        mylist.add(new Listmodel("Systec Press","30500"));
-        mylist.add(new Listmodel("Liverpool press","50060"));
+
 
 
     }
